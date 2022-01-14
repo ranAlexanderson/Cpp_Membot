@@ -18,7 +18,8 @@ ChatLogic::ChatLogic()
     //// STUDENT CODE
     ////
 
-    /* nstance of _chatBot will be created later
+    /* instance of ChatBot will be created later. Pointer to ChatBot will be assigned in
+    LoadAnswerGraphFromFile
     // create instance of chatbot
     _chatBot = new ChatBot("../images/chatbot.png");
 
@@ -36,7 +37,9 @@ ChatLogic::~ChatLogic()
 
     // delete chatbot instance
     std::cout << "ChatLogic destructor" << std::endl;
-    delete _chatBot;
+    
+    // No reason to delete chatBot
+    //delete _chatBot;
 
     // delete all nodes. As of now the _nodes vector is a vector of unique_ptr<GraphNode> and therfore will be deallocated
     // automatically once ChatLogic will go out of scope
